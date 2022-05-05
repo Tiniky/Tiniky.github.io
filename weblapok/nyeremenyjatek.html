@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyereményjáték - Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+</head>
+
+<body>
+    <header>
+        
+        <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+    
+        <div class="MENU">
+            <nav id="menusor">
+                <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+                <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+                <a href="https://www.riotgames.com/hu" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+                <a href="index.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Kezdőlap"></a>
+                <ul id="menu">
+                    <li><a href="projects.html#games">Játékok</a></li>
+                    <li><a href="projects.html#arcane">Arcane</a></li>
+                    <li><a href="projects.html#zene">Zene</a></li>
+                    <li><a href="nyeremenyjatekENG.html">ENG</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="../js/weblap.js"></script>
+    
+        <script>
+            var menusor = document.getElementById("menusor");
+            var menu = document.getElementById("menu");
+    
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    menusor.classList.add("sticky");
+                }
+                else{
+                    menusor.classList.remove("sticky");
+                }
+            }
+        </script>
+    
+    </header>
+
+<main id="tartalom">
+    <a id="top"></a>
+    
+    <div class="extraNAV"><a href="index.html">Főoldal</a> >> <a href="projects.html#games">Játékok</a> >> <a href="leagueOfLegends.html">League of Legends</a> >> Nyereményjáték</div>
+
+    <div id="urlapBevezeto">
+        
+        <h1>NYEREMÉNYJÁTÉK</h1>
+
+        <figure>
+            <img src="../kepek/kep23.jpg" alt="Viego">
+        </figure>
+
+        <p>Egy hangos puffanással <span lang="en"><i>Teemo</i></span> eltűnik és <span lang="en"><strong>Viego</strong></span> áll veled szemben. A bukott király mosolyogva néz rád. Furcsa érzés tölt el, elvégre <span lang="en"><strong>Viego</strong></span>ról van szó. Nem az a fajta ember, akit csak úgy mosolyogni látsz. Veszélyben érzed magad, hátrálsz egy lépést. <span lang="en"><strong>Viego</strong></span> még mindig vigyorogva utánad lép és megfogja a karod. Ijedten húzódsz el. <span lang="en"><strong>Viego</strong></span> arcára ráfagy a vigyor. Lassan végignéz magán, majd felnevet. Újabb puffanás és <span lang="en" title="az a passzívja, hogy fel tudja venni más hősök alakját"><i>Neeko</i></span>-val találod szembe magad. Bocsánatot kér, amiért megijesztett. Felajánlja, hogy segít megtalálni a <span title="Görgess lejjebb!">nyereményjátékot</span>. Vajon hol lehet <span lang="en"><i>Teemo</i></span>? o.o</p>
+    </div>
+
+    <form action="mailto:timeanikolett2002@gmail.com" method="POST" enctype="text/plain">
+        <input class="gombok" type="reset" value="Ekko R" title="visszaugrik az időben (RESET)">
+        <fieldset>
+            <legend>NYEREMÉNYJÁTÉK</legend>
+            <label for="summoner"><input type="text" name="summonerName" id="summoner" value="Idéző Név" maxlength="16" required> </label> <br> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Mi a fő pozíciód?</legend>
+            <input type="radio" name="toplane" id="toplane"> <label for="toplane">Felső Ösvény</label> <br>
+            <input type="radio" name="jg" id="jg"> <label for="jg">Dzsungeles</label> <br>
+            <input type="radio" name="mid" id="mid"> <label for="mid">Középső Ösvény</label> <br>
+            <input type="radio" name="bot" id="bot"> <label for="bot">Alsó Ösvény</label> <br>
+            <input type="radio" name="supp" id="supp"> <label for="supp">Támogató</label> <br>
+            <input type="radio" name="auto" id="auto"> <label for="auto">AUTOFILL</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Melyik játékmóddal játszol a leggyakrabban?</legend>
+            <input type="checkbox" name="normal" id="normal"> <label for="normal">Normál</label> <br>
+            <input type="checkbox" name="ranked" id="ranked"> <label for="ranked">Rangsorolt</label> <br>
+            <input type="checkbox" name="aram" id="aram"> <label for="aram">Aram</label> <br>
+            <input type="checkbox" name="costum" id="costum"> <label for="costum"><span lang="en">Custom</span></label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Story Time</legend>
+            <label for="storyTime"><textarea name="storyTime" id="storyTime" cols="60" rows="10" placeholder="Mióta játszol? Mesélj a LoL-os élményeidről :D" maxlength="450"></textarea></label>
+        </fieldset>
+            
+        <input class="gombok" type="submit" value="KÜLDÉS">
+        <input class="gombok" type="reset" value="Ekko R" title="visszaugrik az időben (RESET)">
+    </form>
+    
+</main>
+
+<button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+<footer>
+    <p>Készítette: Fábián T. Nikolett - RDDZXA</p>
+</footer>
+
+</body>
+</html>

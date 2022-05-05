@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway- Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+</head>
+<body>
+    <header>
+        
+        <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+    
+        <div class="MENU">
+            <nav id="menusor">
+                <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+                <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+                <a href="https://www.riotgames.com/en" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+                <a href="indexENG.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Main Page"></a>
+                <ul id="menu">
+                    <li><a href="projectsENG.html#games">Games</a></li>
+                    <li><a href="projectsENG.html#arcane">Arcane</a></li>
+                    <li><a href="projectsENG.html#zene">Music</a></li>
+                    <li><a href="nyeremenyjatek.html">HU</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="../js/weblap.js"></script>
+    
+        <script>
+            var menusor = document.getElementById("menusor");
+            var menu = document.getElementById("menu");
+    
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    menusor.classList.add("sticky");
+                }
+                else{
+                    menusor.classList.remove("sticky");
+                }
+            }
+        </script>
+    
+    </header>
+
+<main id="tartalom">
+    <a id="top"></a>
+
+    <div class="extraNAV"><a href="indexENG.html">Main Page</a> >> <a href="projectsENG.html#games">Games</a> >> <a href="leagueOfLegendsENG.html">League of Legends</a> >> Giveaway</div>
+    <div id="urlapBevezeto">
+        <h1>GIVEAWAY</h1>
+
+        <figure>
+            <img src="../kepek/kep23.jpg" alt="Viego" style="width:55%">
+        </figure>
+
+        <p>You hear a loud puff then Teemo disappears. Viego is standing in front of you. The Ruined King looks at you smiling. You get a weird feeling about it, he isn't the type of guy who just smiles at people. You feel like you are in danger, so you take a step back. Viego follows you and grabs your arm. You draw apart from him shaking. Viego's smile froze on his face. He slowly takes a look of himself, then he starts laughing. You hear a second puff. Neeko is now standing in Viego's place. She apologises for scaring you like that. Neeko offers her help to get you to the giveaway. You go along. Wait, where is Teemo? o.o</p>
+    </div>
+
+    <form action="mailto:timeanikolett2002@gmail.com" method="POST" enctype="text/plain">
+        <input class="gombok" type="reset" value="Ekko R" title="goes back in time (RESET)">
+        <fieldset>
+            <legend>GiveAway</legend>
+            <label for="summoner"><input type="text" name="summonerName" id="summoner" value="Summoner Name" maxlength="16" required> </label> <br> 
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your main role?</legend>
+            <input type="radio" name="toplane" id="toplane"> <label for="toplane">Top</label> <br>
+            <input type="radio" name="jg" id="jg"> <label for="jg">Jungle</label> <br>
+            <input type="radio" name="mid" id="mid"> <label for="mid">Mid</label> <br>
+            <input type="radio" name="bot" id="bot"> <label for="bot">Bot</label> <br>
+            <input type="radio" name="supp" id="supp"> <label for="supp">Support</label> <br>
+            <input type="radio" name="auto" id="auto"> <label for="auto">AUTOFILL</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which gamemodes do you play with?</legend>
+            <input type="checkbox" name="normal" id="normal"> <label for="normal">Normal</label> <br>
+            <input type="checkbox" name="ranked" id="ranked"> <label for="ranked">Ranked</label> <br>
+            <input type="checkbox" name="aram" id="aram"> <label for="aram">Aram</label> <br>
+            <input type="checkbox" name="costum" id="costum"> <label for="costum"><span lang="en">Custom</span></label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Story Time</legend>
+            <label for="storyTime"><textarea name="storyTime" id="storyTime" cols="60" rows="10" placeholder="How long have you been playing? Tell me about your most fun experience :D" maxlength="450"></textarea></label>
+        </fieldset>
+            
+        <input class="gombok" type="submit" value="SUBMIT">
+        <input class="gombok" type="reset" value="Ekko R" title="goes back in time (RESET)">
+    </form>
+</main>
+
+    <button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+    <footer>
+        <p>Made By: Fábián T. Nikolett - RDDZXA</p>
+    </footer>
+</body>
+</html>

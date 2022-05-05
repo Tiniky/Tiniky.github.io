@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends - Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+</head>
+<body>
+    <header>
+        
+        <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+    
+        <div class="MENU">
+            <nav id="menusor">
+                <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+                <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+                <a href="https://www.riotgames.com/en" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+                <a href="indexENG.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Main Page"></a>
+                <ul id="menu">
+                    <li><a href="projectsENG.html#games">Games</a></li>
+                    <li><a href="projectsENG.html#arcane">Arcane</a></li>
+                    <li><a href="projectsENG.html#zene">Music</a></li>
+                    <li><a href="leagueOfLegends.html">HU</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="../js/weblap.js"></script>
+    
+        <script>
+            var menusor = document.getElementById("menusor");
+            var menu = document.getElementById("menu");
+    
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    menusor.classList.add("sticky");
+                }
+                else{
+                    menusor.classList.remove("sticky");
+                }
+            }
+        </script>
+    
+    </header>
+
+<main id="tartalom">
+    <a id="top"></a>
+
+    <div class="extraNAV"><a href="indexENG.html">Main Page</a> >> <a href="projectsENG.html#games">Games</a> >> League of Legends</div>
+
+    <h1>LEAGUE OF LEGENDS</h1>
+
+    <article id="guide">
+        <figure>
+            <img src="../kepek/kep22.jpg" alt="LoL minimap" title="LoL mini map" style="width: 60%;">
+        </figure>
+
+        <h2>Guide</h2>
+
+        <p>League of Legends games are played in the map shown above. In the bottom left and in the top right corner are the two teams bases. The map is divided in three lanes: top, mid and bottom.</p>
+        <aside id="teemo2">
+            <a href="nyeremenyjatekENG.html">
+                <img src="../kepek/teemo.jpg" alt="Teemo" title="Teemo" width="150">
+            </a>
+        </aside>
+        <p>On Top lane the tankier, mainly melee range champs go. Mid Lane is for the mages and the assassins. Two more player goes to Bot lane. One is the ADC or APC and the other one is the Support. The Support's job is to keep their team alive. Support champs have a pretty wide range there are enchanter, tank and even damage supports.</p>
+        <p>That is still only 4-4 players, so where is the fifth one? Between the lanes there are bunch of rocks, trees and monsters. There goes the Jungler. They don't level up by compiting in a lane with other players, they take down jungle camps instead. Their job is to gank the lanes that needs help, also it is their task to take down epic monsters like Drakes, Rift Herald and Baron Nashor.</p>
+        <p>If a team takes down 4 Drakes, they get a buff for the rest of the game depending on the last Drake's type. The Drake types are: water(healing), fire(damage), air(movement speed and cooldown reduction), earth(armor) and hextech. There are buffs with time limits like Baron Nashor and Elder Drake. And last but not least there is the Rift Herald which helps the team that gets it headbut the enemy turrets.</p>
+        <p>Sounds simple right? There are 159 champs, 5 rune trees and over 200 items. Everything is given to help you go and destroy that Nexus. Hope I made you feel like playing League of Legends. See you in the Rift!</p>
+    
+        
+    </article>
+
+    <hr>
+
+    <h2>Gameplay - Montage</h2>
+    
+    <video controls style="width: 75%;" poster="../kepek/videothumbnail.jpg">
+        <source src="../montage.mp4" type="video/mp4">
+        <p>Sorry but your browser doesn't support this video!</p>
+    </video>
+
+    <div id="video">
+    <p>you can also <a href="https://youtu.be/ywxBNkiKm8Q" target="_blank">watch the whole video</a> if you want to</p>
+    </div>
+</main>
+
+    <button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+    <footer>
+        <p>Made By: Fábián T. Nikolett - RDDZXA</p>
+    </footer>   
+</body>
+</html>

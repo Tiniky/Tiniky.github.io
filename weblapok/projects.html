@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektjeik- Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+    <link rel="stylesheet" type="text/css" href="../css/print.css" title="print">
+</head>
+
+<body>
+    <header>
+        
+        <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+    
+        <div class="MENU">
+            <nav id="menusor">
+                <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+                <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+                <a href="https://www.riotgames.com/hu" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+                <a href="index.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Kezdőlap"></a>
+                <ul id="menu">
+                    <li><a href="#games">Játékok</a></li>
+                    <li><a href="#arcane">Arcane</a></li>
+                    <li><a href="#zene">Zene</a></li>
+                    <li><a href="projectsENG.html">ENG</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="../js/weblap.js"></script>
+    
+        <script>
+            var menusor = document.getElementById("menusor");
+            var menu = document.getElementById("menu");
+    
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    menusor.classList.add("sticky");
+                }
+                else{
+                    menusor.classList.remove("sticky");
+                }
+            }
+        </script>
+    
+    </header>
+
+<main id="tartalom">
+
+    <a id="top"></a>
+
+    <h1>PROJEKTJEIK</h1>
+
+    <div id="riotProjektBevezeto">
+        <img src="../kepek/kep5.jpg" alt="Riot Forge">
+        <img src="../kepek/kep6.jpg" alt="10 year annieversary">
+    </div>
+
+
+    <a id="games"></a>
+    <hr>
+
+    <div class="extraNAV"><a href="index.html">Főoldal</a> >> Játékok</div>
+
+    <section id="jatekok">
+        <h2>Játékok</h2>
+
+    <div id="lol">
+
+        <figure>
+            <img src="../kepek/kep7.jpg" alt="League of Legends">
+            <figcaption>League of Legends</figcaption>
+        </figure>
+
+        <div id="lolLeiras">
+            <p>A <a href="https://www.leagueoflegends.com/hu-hu/how-to-play/" target="_blank"><span lang="en">League of Legends</span></a> (2009) egy <span title="Multiplayer Online Battle Arena"><i>MOBA</i></span> játék. Egy meccset egyszerre 10 ember játszik két 5 fős csapatban. A játékos egy hőst irányít, harmadik nézetből. A csapatok célja, hogy lerombolják a másik csapat bázisát. A <a href="leagueOfLegends.html"><span lang="en">LEAUGE OF LEGENDS</span></a> oldalon egy rövid összefoglalót találsz a játékról.</p>
+        </div>
+    </div>
+
+    <div id="otherGames">
+        <div id="row">
+            <div class="column">
+        
+                <figure>
+                    <img src="../kepek/kep8.jpg" alt="Teamfight Tactics">
+                    <figcaption>TeamFight Tactics</figcaption>
+                </figure>
+
+                <p>A <a href="https://teamfighttactics.leagueoflegends.com/hu-hu/" target="_blank"><span lang="en">Teamfight Tactics</span></a> (2019) leginkább egy automatikus sakk játékra hasonlít, azzal a különbséggel, hogy a bábúk helyett <b><span lang="en">League of Legends</span></b> hősök harcolnak. Egy játékban 8 játékos van. A <b>Normál</b> játékmódban mindenki magáért küzd, míg a <b><span lang="en">Double Up</span></b> játékmód lehetőséget nyújt arra, hogy két játékos összedolgozzon.</p>
+            </div>
+            <div class="column">
+        
+                <figure>
+                    <img src="../kepek/kep9.jpg" alt="Valorant">
+                    <figcaption>Valorant</figcaption>
+                </figure>
+
+                <p>A <a href="https://playvalorant.com/en-us/" target="_blank"><span lang="en">Valorant</span></a> (2020) egy <span title="First Person Shooter"><i>FPS</i></span>, amit a többi fps-hez hasonlóan 5v5ben lehet játszani. A játékos egy hőst irányít, akinek a fegyverén kívül még képességei is vannak. Az a csapat nyer a végén, aki több kört nyer összességében a menet során.</p>
+            </div>
+            <div class="column">
+        
+                <figure>
+                    <img src="../kepek/kep10.jpg" alt="Wild Rift">
+                    <figcaption>Wild Rift</figcaption>
+                </figure>
+        
+                <p>A <a href="https://wildrift.leagueoflegends.com/en-us/" target="_blank"><span lang="en">Wild Rift</span></a> (2020) nem más mint a <b><span lang="en">League of Legends</span></b> telefonra optimalizált kis testvére. Bár kevesebb hős van benne és az objektívek is könnyebbek, így is visszaadja a LoL varázsát. A rövidebb játékidő kedvező a telefonos felületeken. Nem lehet egyszerű egy 50 perces meccset végig ülni, mikor épp nagyon merülőben van a telefon.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+        
+                <figure>
+                    <img src="../kepek/kep11.jpg" alt="Legends of Runeterra">
+                    <figcaption>Legends of Runeterra</figcaption>
+                </figure>
+                
+                <p>A <a href="https://playruneterra.com/en-us/" target="_blank"><span lang="en">Legends of Runeterra</span></a> (2020) egy digitális gyűjthető kártyajáték. Magadnak állítod össze a paklijaid, amiből majd a játék random lapokat sorsol. A játék mechanikája egyszerű. 1v1-be mennek a meccsek és aki jobban játsza meg a pakliját az nyer.</p>        
+            </div>
+            <div class="column">
+        
+                <figure>
+                    <img src="../kepek/kep12.jpg" alt="Ruined King">
+                    <figcaption>Ruined King</figcaption>
+                </figure>
+        
+                <p>A <a href="https://ruinedking.com/en-us/" target="_blank"><span lang="en">Ruined King: A League of Legends Story</span></a> (2021), a <b><span lang="en">Riot</span></b> első <span title="Role Play Game"><i>RPG</i></span>-je, aka szerepjátéka. A játék harmadik nézetben játszódik. A történet betekintést enged <i><span lang="en">Viego, the Ruined King</span></i> és a <i><span lang="en">Ruination</span></i> történetébe. Harc stílusa egyedi, de élvezetes.</p>
+        
+            </div>
+            <div class="column">
+        
+                <figure>
+                    <img src="../kepek/kep13.jpg" alt="Hextech Mayhem">
+                    <figcaption>Hextech Mayhem</figcaption>
+                </figure>
+        
+                <p>A <a href="https://hextechmayhem.com/en-us/" target="_blank"><span lang="en">Hextech Mayhem: A League of Legends Story</span></a> (2021) egy ritmus játék. Különböző pályákat teljesítve lehet haladni a történettel. Nem kell mást csinálni mint a zene ritmusára rombolni <i><span lang="en">Ziggs</span></i>-el.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h3>COMING SOON..</h3>
+
+    <div id="comingSoon">
+        
+        <div class="row">
+            <div class="column2">
+                <figure>
+                    <img src="../kepek/kep14.jpg" alt="Conv/rgence">
+                    <figcaption>Conv/rgence</figcaption>
+                </figure>
+        
+                <p>A <a href="https://convrgencegame.com" target="_blank"><span lang="en">Conv/rgence: A Leauge of Legends Story</span></a> (2022?) egy 2D-s paltformú akció játék lesz. Csak egy trailert láthattunk eddig belőle, de az már így is világos, hogy remek vizuális desingja van. A harc stílusa is érdekes <i><span lang="en">Ekko</span></i> időutazó képességeivel.</p>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="../kepek/kep15.jpg" alt="Song of Nunu">
+                    <figcaption>Song of Nunu</figcaption>
+                </figure>
+        
+                <p>A <a href="https://songofnunu.com/en-us/" target="_blank"><span lang="en">Song of Nunu: A League of Legends Story</span></a> (2022?) egy egyjátékos kaland játék. <i>Nunu</i>-t irányítva fedezhetjük fel <i>Freljordot</i> és annak történetét puzzle-k megfejtésével.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <a id="arcane"></a>
+    <hr>
+
+    <div class="extraNAV"><a href="index.html">Főoldal</a> >> Arcane</div>
+
+    <section id="animaciosSorozat">
+        <h2>Arcane</h2>
+    <div id="Arcane">
+        
+
+        <figure>
+            <img src="../kepek/kep16.jpg" alt="Arcane">
+        </figure>
+
+        <p>2021 novemberében eljött a pillanat, amire sokan vártunk, megjelent a <b>Riot Games</b> első animációs sorozata, az <b><span lang="en">Arcane</span></b>. Hetente 3 rész jött ki a <b><span lang="en">Netflix</span></b>re, az első évad 9 részből áll. A történet <i>Zaun</i>-ban és <i>Piltover</i>-ben játszódik. A két ország régóta konfliktusban áll egymással. A főszerepben egy testvérpár áll, <i><span lang="en">Vi</span></i> és <i><span lang="en">Jinx</span></i>. Feltűnik még a sorozatban <span lang="en"><i>Caitlyn</i>, <i>Ekko</i>, <i>Heimerdinger</i>, <i>Jayce</i>, <i>Viktor</i>, <i>Renata</i>, <i>Singed</i></span> és <i>Kindred</i>.</p>
+        <p>Fordulat fordulat hátán. Lenyűgőző kép és hanganyag. Az egyedüli dolog, ami nem tetszik az embereknek, az a tény, hogy a második évadra legalább két évet kell várni.</p>
+        <p>A <b><span lang="en">Netflix</span></b> széles körü ismeretségének köszönhetően nagyon sokan megnézték és nem csak a <b><span lang="en">League of Legends</span></b> fanok. A <i><span lang="en">Neopaint</span></i> emberei is látták. Inspirációt szereztek a következő projektjükhöz. Pár nap múlva már ott virított az <b><span lang="en">Arcane</span></b> graffiti a két Mammut épülete között.</p>
+
+        <div class="row">
+            <div class="column2">
+                <img src="../kepek/kep17.jpg" alt="Vi and Caitlyn">
+            </div>
+            <div class="column">
+                <a target="_blank" href="../kepek/kep18.jpg">
+                    <img src="../kepek/kep18_kicsi.jpg" alt="Arcane graffiti">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    
+    <a id="zene"></a>
+    <hr>
+
+    <div class="extraNAV"><a href="index.html">Főoldal</a> >> Zenéik</div>
+
+<section id="zeneik">
+
+    <h2>Zenéik</h2>
+    
+    <div id="music">
+        
+        <div id="zeneBevezeto">
+
+            <p>Az évek során a <b><span lang="en">Riot Games</span></b> megvillogtatta zenei hozzáértését is. Kezdetben csak a hősök kaptak theme zenét, majd ahogy a <span title="League of Legends"><i>LoL</i></span> E-sport szintűvé nőtte ki magát úgy kezdett hatványosan növekedni a zenék száma és javulni a minősége. Az epikus zenéket teljes orkesztra játsza, míg a többi számhoz különféle énekeseket kértek fel.</p>
+            <p>A <a href="https://open.spotify.com/playlist/2794zMPXipOK3E5T1tbyqq?si=52787969ff0c42a1" target="_blank">THEME</a> zenéket és a <a href="https://open.spotify.com/playlist/7kmB0GgGGgnb89kB58StnV?si=bfbbabd2813e4253" target="_blank">KISLEMEZEK</a>et összszedve megtalálhatjátok itt.</p>
+        
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="../kepek/kep19.jpg" alt="Pentakill">
+                </figure>
+        
+                <p>A <b>Pentakill</b> egy <span lang="en">Heavy Metal</span> banda. A banda eredeti tagjai: vokalista: <i><span lang="en">Kayle</span></i> és <i><span lang="en">Karthus</span></i>, gitáros: <i><span lang="en">Mordekaiser</span></i>, basszus gitáros: <i><span lang="en">Yorick</span></i>, billentyűs zongorista: <i><span lang="en">Sona</span></i> és dobos: <i>Olaf</i>. Későbbiekben <i>Viego</i> ének hangja is társul hozzájuk.</p>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="../kepek/kep20.jpg" alt="K/DA">
+                </figure>
+        
+                <p>A <b>K/DA</b> egy K-pop lánycsapat. A csapat alapító tagjai: <i>Akali</i>, <i>Ahri</i>, <i><span lang="en">Kai’sa</span></i> és <i>Evelynn</i>. Később csatlakozik hozzájuk <i><span lang="en">Seraphine</span></i> is és így már 5en énekelnek a második albumukban.</p>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="../kepek/kep21.jpg" alt="True Damage">
+                </figure>
+        
+                <p>A <b><span lang="en">True Damage</span></b> egy elektro/hip-hop zenét játszó csapat. A K/DA fő rapperének, <i>Akali</i>nak a mellék porjektjeként alapult. Csatlakozott hozzá még <i><span lang="en">Yasou</span></i>, <i><span lang="en">Qiyana</span></i>, <i>Ekko</i> és <i><span lang="en">Senna</span></i>.</p>
+            </div>
+        </div>
+
+        <table>
+            <caption>
+                <details id="tablazat">
+                    <summary>Zenei albumok a Riot Gamestől</summary>
+                    <p>A Riot Games zenei produkciós csapatának munkái időrendi sorrendbe szedve.</p>
+                    <p><sub>Ha valamelyikbe bele szeretnél hallgatni, elég ha rákattintasz az album nevére.</sub></p>
+                </details>
+            </caption>
+            <tr>
+                <th>KIADÁS DÁTUMA</th>
+                <th>ELŐADÓ</th>
+                <th>ALBUM</th>
+                <th>SZÁMOK</th>
+            </tr>
+            <tr>
+                <td><time datetime="2014-06-03">2014. június 3.</time></td>
+                <td>Pentakill</td>
+                <td><a href="https://open.spotify.com/album/15uKqLeki8fZuLdR44Qtz8?si=Zk10Mf65T5ePiHOK5BtcKQ" target="_blank">Smite and Ignite</a></td>
+                <td class="szam">8</td>
+            </tr>
+            <tr>
+                <td><time datetime="2017-08-03">2017. augusztus 3.</time></td>
+                <td>Pentakill</td>
+                <td><a href="https://open.spotify.com/album/5U0MXVHm1WiAfmmwFteqUo?si=rdKK8ef4TIyD93V_aKTguA" target="_blank">Grasp of Undying</a></td>
+                <td class="szam">10</td>
+            </tr>
+            <tr>
+                <td><time datetime="2018-11-03">2018. november 3.</time></td>
+                <td>K/DA</td>
+                <td><a href="https://open.spotify.com/album/0UnBZ8laFgLUq5Ty5vbikQ?si=-FL95bZGQYWips5-lc6TJQ" target="_blank">K/DA</a></td>
+                <td class="szam">1</td>
+            </tr>
+            <tr>
+                <td><time datetime="2019-11-10">2019. november 10.</time></td>
+                <td>True Damage</td>
+                <td><a href="https://open.spotify.com/album/1hK1lKNTYUM4wYRIY19CRO?si=IQ508bjzSfCz0_UERS4eAA" target="_blank">Giants</a></td>
+                <td class="szam">1</td>
+            </tr>
+            <tr>
+                <td><time datetime="2020-11-06">2020. november 6.</time></td>
+                <td>K/DA</td>
+                <td><a href="https://open.spotify.com/album/26IdRjba8f8DNa7c0FwfQb?si=kru7K7ErQwitnDd8oFgbqQ" target="_blank">All Out</a></td>
+                <td class="szam">5</td>
+            </tr>
+            <tr>
+                <td><time datetime="2021-09-21">2021. szeptember 21.</time></td>
+                <td>Pentakill</td>
+                <td><a href="https://open.spotify.com/album/6jHsnYqSmiMqBvzG8qrYuE?si=e98ofuwISXy8dqXBInhRsA" target="_blank">Lost Chapter</a></td>
+                <td class="szam">11</td>
+            </tr>
+        </table>
+    </div>
+
+</section>
+
+</main>
+
+<button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+<footer>
+    <p>Készítette: Fábián T. Nikolett - RDDZXA</p>
+</footer>
+
+</body>
+
+</html>

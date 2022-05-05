@@ -1,0 +1,549 @@
+/*Közös*/
+body{
+    font-family:"Trebuchet MS", Arial, Verdana, sans-serif;
+    background-color: #1A1B1C;
+    color: white;
+    text-align: justify;
+}
+
+h1,h2,h3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+a.kipozicional {position:absolute; left:-9999px;}
+a:focus.kipozicional {position:static; background:white}
+
+a:link {
+    color: #35FCFE;
+}
+
+a:visited {
+    color: #9F9FF9;
+}
+
+a:hover {
+    color: #08B399;
+    text-decoration:underline;
+}
+
+.extraNAV{
+    color: #F0A19A;
+    font-size: 90%;
+    font-variant:small-caps;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.extraNAV a{
+    color: #F0A19A;
+    text-decoration:none;
+}
+
+.extraNAV a:hover{
+    color: #F58675;
+    text-decoration:underline;
+}
+
+main{
+    font-size: 125%;
+}
+
+button{
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size:100%;
+    background-color: #F85649;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+button#kisebb {display: none;}
+
+.MENU{
+    margin-top:0px;
+    width:100%;
+    height: 20vh;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    height: 75px;
+}
+
+.GOMB{
+    display:none;
+    cursor: pointer;
+}
+
+.logo1{
+    width: 100px;
+    margin: 0 10px 0 45px;
+    cursor: pointer;
+}
+
+.logo2{
+    width: 75px;
+    cursor: pointer;
+}
+
+nav a{
+    color: #35FCFE;
+    text-decoration:none;
+	font-variant:small-caps;
+	font-size:1.5em;
+	margin-right:1.5em;
+}
+
+nav ul{
+    background: black;
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    color: white;
+}
+
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 5%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.sticky button{
+    display:inline;
+    width: 75px;
+    top:14%;
+    left:1%;
+    position: absolute;
+}
+
+/*index.html*/
+div#bevezeto img{
+    width: 99%;
+    height: 800px;
+}
+
+article#backgroundStory {
+	column-count: 2;
+	column-gap: 125px;
+    margin: 75px 10% 75px 10%;
+}
+
+article#backgroundStory h2{
+    text-align: left;
+}
+
+article#backgroundStory figure img{
+    width: 80%;
+    padding: 0 50px 0 50px;
+}
+
+article#backgroundStory figure figcaption{
+    text-align: center;
+}
+
+article#gyakornok{
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 200px;
+    background-image: url("../kepek/kep4.png");
+    background-position: top right;
+    background-size: 80%;
+    background-repeat:no-repeat;
+}
+
+a#gomb{
+    text-decoration: none;
+}
+
+a#gomb:hover{
+    text-decoration: underline;
+}
+
+div#teemo {
+    font-size: 90%;
+    text-align: center;
+    margin: 5px 5% 5px 5%;
+}
+
+
+/*projects.html*/
+div#riotProjektBevezeto img{
+    width:49%;
+    margin: 0 5px 0 5px;
+}
+
+hr{
+    margin-top: 50px;
+    width:75%;
+}
+
+section#jatekok figure figcaption{
+    text-align: center;
+    font-style: italic;
+    font-size:80%;
+}
+
+section#jatekok figure img{
+    width:100%;
+}
+
+div#lol figure img{
+    width:70%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+div#lolLeiras{
+    margin: 10px 20% 50px 20%;
+}
+
+div#otherGames{
+    margin-top: 50px;
+    display:table;
+}
+
+div#otherGames p{
+    margin: 0 25px 0 40px;
+}
+
+div#comingSoon p{
+    margin: 0 25px 0 40px;
+}
+
+.column{
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+.column2{
+    float: left;
+    width: 30%;
+    padding: 20px;
+    margin-left: 17%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+section#animaciosSorozat img{
+    width:100%;
+}
+
+div#Arcane figure img{
+    width:70%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+div#Arcane p{
+    margin: 15px 20% 20px 20%;
+}
+
+section#zeneik img{
+    width:100%;
+}
+
+div#music p{
+    margin: 0 25px 0 40px;
+}
+
+div#zeneBevezeto p{
+    margin: 15px 20% 20px 20%;
+}
+
+div#music table{
+    margin: 25px 0 10px 210px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table{
+    width: 75%;
+}
+
+th {
+  height: 60px;
+  text-align: center;
+  background-color: black;
+}
+
+td {
+  padding: 15px;
+  background-color: #2B2A29;
+}
+
+td a{
+    text-decoration: none;
+}
+
+.szam{
+    text-align: center;
+}
+
+/*leagueOfLegends.html*/
+article#guide img{
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+article#guide p{
+    margin: 15px 20% 20px 20%;
+}
+
+aside img:hover{
+    border: 3px dashed white;
+}
+
+aside{
+    float: right;
+    padding: 100px 20px 20px 20px;
+}
+
+video{
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+div#video{
+    text-align: center;
+}
+
+/*nyeremenyjatek.html*/
+div#urlapBevezeto img{
+    width: 55%;
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+div#urlapBevezeto p{
+    margin: 15px 300px 50px 300px;
+}
+
+form{
+    width: 35%;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.gombok{
+    font-size: 100%;
+}
+
+/*tablet*/
+@media screen and (max-width: 1200px){ 
+div#extraNAV{
+    margin-top: 65px;
+}
+
+div#bevezeto img{
+    width: 99%;
+    height: 100%;
+}
+
+article#backgroundStory {
+	column-count: 1;
+    margin: 25px 10% 25px 10%;
+}
+
+article#backgroundStory figure img{
+    width: 75%;
+}
+
+article#gyakornok{
+    padding: 105px;
+    background-color: white;
+   
+}
+
+article#gyakornok p{
+    font-size:83%;
+    text-align: justify;
+    padding-right: 250px;
+}
+
+div#teemo {
+    font-size: 80%;
+    text-align: justify;
+    margin: 5px 5% 5px 5%;
+}
+
+div#riotProjektBevezeto img{
+    margin: 0;
+}
+
+div#lol figure img{
+    width:90%;
+}
+
+
+.column, .column2{
+    float: none;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.column p{
+    font-size:85%;
+}
+
+.column2 p{
+    font-size:85%;
+}
+
+div#Arcane figure img{
+    width:90%;
+}
+
+
+div#music table{
+    margin: 25px 0 10px 150px;
+}
+
+div#urlapBevezeto img{
+    width:90%;
+}
+
+div#urlapBevezeto p{
+    margin: 15px 10% 50px 10%;
+}
+
+}
+
+/*telefon*/
+@media screen and (max-width: 700px){
+button#nagyobb {display: none;}
+
+.MENU{
+    height: 20vh;
+}
+
+nav{
+    padding: 5px 0;
+}
+
+.logo1{
+    width: 65px;
+}
+
+.logo2{
+    width: 50px;
+}
+
+nav a{
+	font-size:90%;
+	margin-right:1.5em;
+}
+
+nav ul{
+    margin-top: 10px;
+}
+
+nav ul li{
+    margin: 5px 5px;
+}
+
+div#extraNAV{
+    margin-top: 25px;
+}
+
+article#gyakornok{
+    background-image: none;
+}
+
+article#gyakornok p{
+    font-size:90%;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+div#teemo {
+    font-size: 70%;
+    text-align: justify;
+    margin: 5px 5% 5px 5%;
+}
+
+div#lol figure img{
+    width:100%;
+}
+
+div#lolLeiras{
+    margin: 10px 50px 50px 50px;
+}
+
+.column, .colum2{
+    float:none;
+    width:80%;
+    margin-left: 7%;
+}
+
+.column p{
+    font-size:90%;
+}
+
+.column2 p{
+    font-size:90%;
+}
+
+div#Arcane figure img{
+    width:100%;
+}
+
+div#Arcane p{
+    margin: 15px 50px 20px 50px;
+}
+
+div#zeneBevezeto p{
+    margin: 15px 50px 20px 50px;
+}
+
+div#music table{
+    width: 75%;
+    margin-left: 30px;
+}
+
+aside{
+    float: none;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+div#urlapBevezeto img{
+    width:90%;
+}
+
+div#urlapBevezeto p{
+    margin: 15px 10% 50px 10%;
+}
+
+form{
+    width: 100%;
+    display: block;
+    margin: 0 2% 0 0;
+}
+
+
+}

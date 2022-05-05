@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends - Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+</head>
+
+<body>
+    <header>
+        
+        <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+    
+        <div class="MENU">
+            <nav id="menusor">
+                <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+                <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+                <a href="https://www.riotgames.com/hu" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+                <a href="index.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Kezdőlap"></a>
+                <ul id="menu">
+                    <li><a href="projects.html#games">Játékok</a></li>
+                    <li><a href="projects.html#arcane">Arcane</a></li>
+                    <li><a href="projects.html#zene">Zene</a></li>
+                    <li><a href="leagueOfLegendsENG.html">ENG</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="../js/weblap.js"></script>
+    
+        <script>
+            var menusor = document.getElementById("menusor");
+            var menu = document.getElementById("menu");
+    
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    menusor.classList.add("sticky");
+                }
+                else{
+                    menusor.classList.remove("sticky");
+                }
+            }
+        </script>
+    
+    </header>
+
+
+
+<main id="tartalom">
+
+    <a id="top"></a>
+
+    <div class="extraNAV"><a href="index.html">Főoldal</a> >> <a href="projects.html#games">Játékok</a> >> League of Legends</div>
+
+    <h1>LEAGUE OF LEGENDS</h1>
+
+    <article id="guide">
+
+        <figure>
+            <img src="../kepek/kep22.jpg" alt="LoL minimap" title="LoL mini map" style="width: 75%;">
+        </figure>
+
+        <h2>Guide</h2>
+
+        <p>A <b><span lang="en">League of Legends</span></b>-t a fent látható pályán játszák. A bal alsó sarokban és a jobb felső sarokban van a két csapat bázisa. A pálya 3 fő ösvényre van felosztva: <i>felső</i>, <i>középső</i> és <i>alsó</i>.</p>
+        <aside>
+            <a href="nyeremenyjatek.html">
+                <img src="../kepek/teemo.jpg" alt="Teemo" title="Teemo" width="150">
+            </a>
+        </aside>
+        <p>A <i>Felső ösvény</i>re a tankosabb, többnyire közelharcos hősök mennek. A <i>Középső ösvény</i> a mágusok és orgyilkosoké. Míg az <i>Alsó ösvény</i>re két játékos megy. Az egyik az <span title="Attack Damage Carry"><i>ADC</i> vagy <span lang="en">AD Carry</span></span> olyan távolharcos hős, akinek sok a sebzése, viszont kevés életerő pontja van. Ha az adott hősnek varázssebzése van akkor <span title="Ability Power Carry"><i>APC</i>-nek vagy <span lang="en">AP Carry-nek</span></span> nevezik. Itt jön a képbe a másik játékos, a <i>Támogató</i>, akinek az a feladata, hogy életben tartsa az ADC-t. Támogató karakterek elég széles körben mozognak, vannak pajzsoló/életerő feltöltő támogatók, tank támogatók és sebző támogatók. Mindenkinek valami.</p>
+        <p>Ez még mindig csak 4-4 játékos, felmerülhet a kérdés, hogy hol az ötödik. Az ösvények között erdős-sziklás tér van. Ott játszik a <i>Dzsungeles</i>. Ő nem úgy lép szintet, hogy másik játékosokkal versenyzik egy ösvényen, hanem a dzsungel szörnyeit szedi le. Az ő feladata, hogy besegítsen a csapatának leszedni az ellenséges játékosokat. Valamint a Dzsungeles feladata figyelni a hatalmas szörnyeket, mint a <b>sárkányok</b>, <b><span lang="en">Rift Herald</span></b> és <b><span lang="en">Baron Nashor</span></b>.</p>
+        <p>Ha a csapat leszed 4 sárkányt az utolsó sárkány fajtájának megfelelő végleges erősítést kap a csapat. A <b>sárkányok</b> lehetnek: víz, tűz, levegő, föld és hextech. Vannak ideiglenes erősítések, amit a <b><span lang="en">Baron Nashor</span></b> és az <b><span lang="en">Elder Drake</span></b> ad jutalmul. Végül de nem utolsó sorban ott a <b><span lang="en">Rift Herald</span></b>, ami faltörő kosként megy a tornyoknak segítve a csapatot, ami megszerezte.</p>
+        <p>Egyszerűnek hangzik nem? Van 159 karakter, 5 rúna fa, több mint 200 tárgy. Mind arra kitalálva, hogy segítsenek betörni azt az ellenséges <span lang="en">Nexust</span>. Remélem kedvet kaptál a LoLhoz, majd látjuk egymást az <b><i>Idézők Szurdokában!</i></b></p>
+    
+    </article>
+
+    <hr>
+
+    <h2>Gameplay - Montage</h2>
+    
+    <video controls style="width: 75%;" poster="../kepek/videothumbnail.jpg">
+        <source src="../montage.mp4" type="video/mp4">
+        <p>Sajnos a böngésződ nem támogatja a videó megjelenítését!</p>
+    </video>
+
+    <div id="video">
+        <a href="https://youtu.be/ywxBNkiKm8Q" target="_blank">a teljes video</a>
+        //
+        <a href="videoLeiras.html">a TELJES video szöveges átirata</a>
+    </div>
+
+</main>
+
+<button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+<footer>
+    <p>Készítette: Fábián T. Nikolett - RDDZXA</p>
+</footer>
+
+</body>
+
+</html>

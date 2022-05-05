@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot Games - Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+</head>
+
+<body>
+
+    <header>
+        
+        <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+    
+        <div class="MENU">
+            <nav id="menusor">
+                <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+                <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+                <a href="https://www.riotgames.com/hu" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+                <a href="index.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Kezdőlap"></a>
+                <ul id="menu">
+                    <li><a href="projects.html#games">Játékok</a></li>
+                    <li><a href="projects.html#arcane">Arcane</a></li>
+                    <li><a href="projects.html#zene">Zene</a></li>
+                    <li><a href="indexENG.html">ENG</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="../js/weblap.js"></script>
+    
+        <script>
+            var menusor = document.getElementById("menusor");
+            var menu = document.getElementById("menu");
+    
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    menusor.classList.add("sticky");
+                }
+                else{
+                    menusor.classList.remove("sticky");
+                }
+            }
+        </script>
+    
+    </header>
+
+<main id="tartalom">
+
+    <a id="top"></a>
+
+    <div class="extraNAV">Főoldal</div>    
+
+    <h1><span lang="en">RIOT GAMES</span></h1>
+
+    <div id="bevezeto">
+        <img src="../kepek/kep1.jpg" alt="League of Legends háttérkép">
+    </div>
+
+    <article id="backgroundStory">
+        <h2>A cég története</h2>
+        <p>Ugorjunk vissza az időben a 2000-es évek elejére. Pontosan oda, amikor az egyik USC-s bentlakásában két közgáz szakos szobatárs megtalálja a közös hangot a videojáték iparban. Egy kis ártatlan beszélgetés, ami később a napjainkban ismert <b>Riot Games</b>-hez vezetett.</p>
+        <p><i><span lang="en">Brandon Beck</span></i> és <i><span lang="en">Marc Merrill</span></i> 2006-ban meglépték a lépcsőt és megalapították a <b><span lang="en">Riot Games</span></b>-t. Megegyeztek, hogy az ázsiai játékokhoz hasonlóan ingyenesen fogják kiadni játékaikat, és azon belül készítenek majd fizetős tartalmakat.</p>
+        
+        <figure>
+            <a target="_blank" href="../kepek/kep2.png">
+                <img src="../kepek/kep2_kicsi.jpg" alt="Annie szobor a Riot irodában">
+            </a>
+            <figcaption><sub><i><span lang="en">Annie</span> és <span lang="en">Tibbers</span> szobor a <span lang="en">Riot</span> irodában</i></sub></figcaption>
+        </figure>
+
+        <figure>
+            <img src="../kepek/kep3.jpg" alt="Riot irodaház">
+            <figcaption><sub><i><span lang="en">Riot</span> irodaház</i></sub></figcaption>
+        </figure>
+
+        <p>Olyan munkatársakat kerestek, akik osztották lelkesedésüket és megkönnyítették az elképzeléseik játékos baráttá alakítását. 4 hónapig dolgozott a kis csapat az első játék protípusán. Míg végül 2009 áprilisában megjelent a <b><span lang="en">League of Legends</span></b> 17 választható hőssel. Mára már havi 180 millió aktív játékosa van és 159 válaszható hőse.</p>
+        <p>2019-ben szintet léptek és több játék projektbe is belekezdtek. Először a <span lang="en">Project A</span>-ról kaptunk hírt, ami a <b><span lang="en">Valorant</span></b>-á nőtte ki magát. Valamint megalakult a <b><span lang="en">Riot Forge</span></b>, ami a cég további ötleteivel foglalkozott. Céljuk az volt, hogy új játékokat adjanak ki, amik a <b><span lang="en">League of Legends</span></b> világába, <i><b>Runeterra</b></i>-ba, engednek mélyebb betekintést.</p>
+    </article>
+
+    <article id="gyakornok">
+
+        <h2>Gyakornoki munkalehetőség</h2>
+        <p>Ha te is szeretnél a csapatuk része lenni, de még diák vagy, ne csüggedj!</p> 
+        <p>Gyakornoki programuk a világ majdnem minden pontján elérhető. Mire vársz még? :D</p>
+        <a id="gomb" href="https://www.riotgames.com/en/university-programs" target="_blank">ÁLLÁSAJÁNLATOK</a>
+
+    </article>
+
+    <div id="teemo">
+        <p>Az oldalakon elszabadult egy <strong><span lang="en">Teemo</span></strong>. Keresd meg nekünk! Ha megtalálod, ő majd megmutatja merre van a nyereményjátékunk. Ne felejtsd a <strong><span lang="en">Teemo</span></strong> passzívot, ha sokat áll egy helyben láthatatlan lesz. Lehet itt ólálkodik a közelben.. Sok sikert!</p>
+    </div>
+</main>
+
+<button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+<footer>
+    <p>Készítette: Fábián T. Nikolett - RDDZXA</p>
+</footer>
+
+</body>
+</html>

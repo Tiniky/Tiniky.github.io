@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot Games - Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+</head>
+
+<body>
+
+<header>
+        
+    <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+
+    <div class="MENU">
+        <nav id="menusor">
+            <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+            <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+            <a href="https://www.riotgames.com/en" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+            <a href="indexENG.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Main Page"></a>
+            <ul id="menu">
+                <li><a href="projectsENG.html#games">Games</a></li>
+                <li><a href="projectsENG.html#arcane">Arcane</a></li>
+                <li><a href="projectsENG.html#zene">Music</a></li>
+                <li><a href="index.html">HU</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <script src="../js/weblap.js"></script>
+
+    <script>
+        var menusor = document.getElementById("menusor");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                menusor.classList.add("sticky");
+            }
+            else{
+                menusor.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</header>
+
+<main id="tartalom">
+    <a id="top"></a>
+
+    <div class="extraNAV">Main Page</div>
+
+    <h1>RIOT GAMES</h1>
+
+    <div id="bevezeto">
+        <img src="../kepek/kep1.jpg" alt="League of Legends wallpaper">
+    </div>
+
+    <article id="backgroundStory">
+        <h2>About the company</h2>
+        <p>Let's jump back in time to the early 2000s. One day in a USC dorm, two business students started talking about the video game industry. That unintantional talk led to the nowadays well known <b>Riot Games</b>.</p>
+        <p>In 2006 <i>Brandon Beck</i> and <i>Marc Merill</i> made the first step, they've officially created the <b>Riot Games</b> company. They agreed on making free games while creating ingame contents which can be obtained by spending some money but the main game is enjoyable without them.</p>
+
+        <figure>
+            <a target="_blank" href="../kepek/kep2.png">
+                <img src="../kepek/kep2_kicsi.jpg" alt="Annie statue in the Riot Office">
+            </a>
+            <figcaption><sub><i>Annie and Tibbers statue in the Riot Office</i></sub></figcaption>
+        </figure>
+    
+        <figure>
+            <img src="../kepek/kep3.jpg" alt="Riot Office">
+            <figcaption><sub><i>Riot Office</i></sub></figcaption>
+        </figure>
+   
+
+        <p>They were looking for people who share their passions and video game affection. Only a little group was working for 4 months on the first game's prototype. This game came out in April of 2009, it's called <b>League of Legends</b>. It only had 17 choosable champ. Today it has over 180 million active monthly players and 159 choosable champ.</p>
+        <p>In 2019 they started working on more projects. First we heard about the Project A which later became <b>Valorant</b>. That year was created the <b>Riot Forge</b>, which is a part of <b>Riot Games</b>, that is focused on the company's other game ideas. Their goal is to release new games each year and to let the players have a deeper look in the magical world of <i><b>Runeterra</b></i>.</p>
+    </article>
+
+    <article id="gyakornok">
+        <h2>University Programs</h2>
+        <p>If you want to be a part of our team, but you are still a student, do not worry!</p>
+        <p>We have available internships around the world. Level up at Riot. What are you waiting for? :D</p>
+        <a id="gomb" href="https://www.riotgames.com/en/university-programs" target="_blank">INTERNSHIP</a>
+    </article>
+
+    <div id="teemo">
+        <p>A wild <strong>Teemo</strong> has been lost. He is probably hiding in one of the following pages. Find him! He knows the way to our giveaway. Don't forget about the <strong>Teemo</strong> passive, if he stays in one place for long enough he becomes invisible. He is somewhere near I heard his little laugh. Good Luck!</p>
+    </div>
+</main>
+    <button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+<footer>
+    <p>Made by: Fábián T. Nikolett - RDDZXA</p>
+</footer>
+
+</body>
+</html>

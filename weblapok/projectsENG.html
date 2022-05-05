@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Their Projects- Fábián T. Nikolett</title>
+    <link rel="stylesheet" type="text/css" href="../css/html.css" title="normal">
+</head>
+<body>
+
+    <header>
+        
+        <a class="kipozicional" href="#tartalom">Ugrás a tartalomra</a>
+    
+        <div class="MENU">
+            <nav id="menusor">
+                <button class="GOMB" type="button" id="nagyobb" onclick="nagyobb()" >| ++ |</button>
+                <button class="GOMB" type="button" id="kisebb" onclick="kisebb()">| -- |</button>
+                <a href="https://www.riotgames.com/en" target="_blank"><img src="../kepek/logo1.png" class="logo1" alt="LOGO1"></a>
+                <a href="indexENG.html"><img src="../kepek/logo2.png" class="logo2" alt="LOGO2" title="Main Page"></a>
+                <ul id="menu">
+                    <li><a href="projectsENG.html#games">Games</a></li>
+                    <li><a href="projectsENG.html#arcane">Arcane</a></li>
+                    <li><a href="projectsENG.html#zene">Music</a></li>
+                    <li><a href="projects.html">HU</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script src="../js/weblap.js"></script>
+    
+        <script>
+            var menusor = document.getElementById("menusor");
+            var menu = document.getElementById("menu");
+    
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    menusor.classList.add("sticky");
+                }
+                else{
+                    menusor.classList.remove("sticky");
+                }
+            }
+        </script>
+    
+    </header>
+    
+<main id="tartalom">
+    <a id="top"></a>
+    <h1>PROJECTS</h1>
+    <div id="riotProjektBevezeto">
+        <img src="../kepek/kep5.jpg" alt="Riot Forge">
+        <img src="../kepek/kep6.jpg" alt="10 year annie-versary">
+    </div>
+
+    <a id="games"></a>
+    <hr>
+
+    <div class="extraNAV"><a href="indexENG.html">Main Page</a> >> Games</div>
+
+    <section id="jatekok">
+        <h2>Games</h2>
+        <div id="lol">
+            <figure>
+                <img src="../kepek/kep7.jpg" alt="League of Legends">
+                <figcaption>League of Legends</figcaption>
+            </figure>
+    
+            <div id="lolLeiras">
+                <p><a href="https://www.leagueoflegends.com/hu-hu/how-to-play/" target="_blank">League of Legends</a> (2009) is a <span title="Multiplayer Online Battle Arena"><i>MOBA</i></span> game. In a match there are 10 players, 5-5 in each team. The player controls a champ in third view. The goal of the game is to destroy the other teams base, their Nexus. If you want to know more about the game check out our <a href="leagueOfLegendsENG.html"> League of Legends Guide</a>.</p>
+            </div>
+        </div>
+
+        <div id="otherGames">
+            <div id="row">
+                <div class="column">
+            
+                    <figure>
+                        <img src="../kepek/kep8.jpg" alt="Teamfight Tactics">
+                        <figcaption>TeamFight Tactics</figcaption>
+                    </figure>
+    
+                    <p><a href="https://teamfighttactics.leagueoflegends.com/hu-hu/" target="_blank">Teamfight Tactics</a> (2019) is more like an automatic chess game but instead of chess pieces there are champs from League of Legends. There are 8 players in a game and everyone is fighting for themselves.</p>
+                </div>
+                <div class="column">
+            
+                    <figure>
+                        <img src="../kepek/kep9.jpg" alt="Valorant">
+                        <figcaption>Valorant</figcaption>
+                    </figure>
+    
+                    <p>A <a href="https://playvalorant.com/en-us/" target="_blank">Valorant</a> (2020) is an <span title="First Person Shooter"><i>FPS</i></span> game. As usual when we talk about this genre, it can played in 5v5 matchups. The player controls a champ who besides their gun has different abilities. The team who wins more rounds wins the game.</p>
+                </div>
+                <div class="column">
+            
+                    <figure>
+                        <img src="../kepek/kep10.jpg" alt="Wild Rift">
+                        <figcaption>Wild Rift</figcaption>
+                    </figure>
+            
+                    <p>A <a href="https://wildrift.leagueoflegends.com/en-us/" target="_blank">Wild Rift</a> (2020) is a League of Legends optimised for mobile. It has less champs and the objectives are easier, but it's still fun to play. The lesser game time is more optimal for mobile gamers. You can't really play a 50 minutes long Draft game when your phone's battery is dying..</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+            
+                    <figure>
+                        <img src="../kepek/kep11.jpg" alt="Legends of Runeterra">
+                        <figcaption>Legends of Runeterra</figcaption>
+                    </figure>
+                    
+                    <p>A <a href="https://playruneterra.com/en-us/" target="_blank">Legends of Runeterra</a> (2020) is a digital card collector game. You can make your own deck with the cards you have and the game will choose between them randomly while you are battling. The game's mechanic is simple. The matches are 1v1, who knows their deck better wins.</p>        
+                </div>
+                <div class="column">
+            
+                    <figure>
+                        <img src="../kepek/kep12.jpg" alt="Ruined King">
+                        <figcaption>Ruined King</figcaption>
+                    </figure>
+            
+                    <p>A <a href="https://ruinedking.com/en-us/" target="_blank">Ruined King: A League of Legends Story</a> (2021) is <b>Riot's</b> first ever <span title="Role Play Game"><i>RPG</i></span>. The game is in third person. The game gives us a deeper look into the story of Viego, the Ruined King and the Ruination. It also has a unic fight style.</p>
+            
+                </div>
+                <div class="column">
+            
+                    <figure>
+                        <img src="../kepek/kep13.jpg" alt="Hextech Mayhem">
+                        <figcaption>Hextech Mayhem</figcaption>
+                    </figure>
+            
+                    <p>A <a href="https://hextechmayhem.com/en-us/" target="_blank">Hextech Mayhem: A League of Legends Story</a> (2021) is a rythm game. You can follow the story by completing different levels. You only have to destroy everything around you to the beat of the music.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>COMING SOON..</h3>
+
+        <div id="comingSoon">
+        
+            <div class="row">
+                <div class="column2">
+                    <figure>
+                        <img src="../kepek/kep14.jpg" alt="Conv/rgence">
+                        <figcaption>Conv/rgence</figcaption>
+                    </figure>
+            
+                    <p>A <a href="https://convrgencegame.com" target="_blank">Conv/rgence: A Leauge of Legends Story</a> (2022?) will be a 2D platform game. Judging by the trailer we are going to get a pretty good visual design as usual. Who's ready to fight with Ekko's time traveling abilities?</p>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="../kepek/kep15.jpg" alt="Song of Nunu">
+                        <figcaption>Song of Nunu</figcaption>
+                    </figure>
+            
+                    <p>A <a href="https://songofnunu.com/en-us/" target="_blank">Song of Nunu: A League of Legends Story</a> (2022?) will be a single player adventure game. We can discover Freljord and it's history by solving puzzles with Nunu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a id="arcane"></a>
+    <hr>
+
+    <div class="extraNAV"><a href="indexENG.html">Main Page</a> >> Arcane</div>
+
+    <section id="animaciosSorozat">
+        <h2>Arcane</h2>
+        <div id="Arcane">
+    
+            <figure>
+                <img src="../kepek/kep16.jpg" alt="Arcane">
+            </figure>
+
+            <p>In November of 2021 the moment we have been so inpatiently waiting for, has come. Riot's first animation series, Arcane has arrived on Netflix. The first season is 9 episodes long, we got 3 episodes each week. The story takes place in Zaun and Piltover. The two were once united but are now separete yet symbiotic societies. In the main role we have two sisters: Vi and Powder (aka Jinx). Other champs showing in the series are: Caitlyn, Ekko, Heimerdinger, Jayce, Viktor, Renata, Singed and Kindred.</p>
+            <p>Cliffhangers over cliffhangers. Amazing visuals and audio. The only thing upseting about the whole show is that we have to wait almost 2 years for the next season.</p>
+            <p>Thanks to Netflix not only League of Legends fan but a whole bunch of people have watched it. For example the guys from Neopaint. They got some inspiration for their next project. After a few days there was a huge Arcane graffiti art between the two Mammut shopping center.</p>
+
+            <div class="row">
+                <div class="column2">
+                    <img src="../kepek/kep17.jpg" alt="Vi and Caitlyn">
+                </div>
+                <div class="column">
+                    <a target="_blank" href="../kepek/kep18.jpg">
+                        <img src="../kepek/kep18_kicsi.jpg" alt="Arcane graffiti">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a id="zene"></a>
+    <hr>
+
+    <div class="extraNAV"><a href="indexENG.html">Main Page</a> >> Music</div>
+
+    <section id="zeneik">
+        <h2>Music</h2>
+        <div id="music">
+            <div id="zeneBevezeto">
+                <p>During thiese years Riot Games has also shown us their musical capabilities. In the beginning only some champs got their theme music, but after League of Legends grew into E-Sport level we started getting more and more music. Not only the numbers but the quality was also improved. For epic music they hired a full orchestra and they also asked famous singers to help them out.</p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <figure>
+                        <img src="../kepek/kep19.jpg" alt="Pentakill">
+                    </figure>
+            
+                    <p>Pentakill is a Heavy Metal band in the League of Legend's universe. The band's original members are: vocalists: Kayle and Karthus, guitarist: Mordekaiser, bassist: Yorick, keyboardist: Sona and drummer: Olaf. Later on Viego's singing voice is joining in.</p>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="../kepek/kep20.jpg" alt="K/DA">
+                    </figure>
+            
+                    <p>K/DA is a K-Pop girlgroup in the League of Legend's universe. The founder members are: Akali, Ahri, Kai'Sa and Evelynn. Seraphine joined them when she came in the game. In their second album all 5 of them are singing.</p>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="../kepek/kep21.jpg" alt="True Damage">
+                    </figure>
+            
+                    <p>True Damage is an electro hip-hop group. It's Akali's side project. Yasou, Qiyana, Ekko and Senna joined her.</p>
+                </div>
+            </div>
+    
+            <table>
+                <caption>
+                    <details id="tablazat">
+                        <summary>Music albums from Riot Games</summary>
+                        <p>Riot Games's music production team's projects in timeline order.</p>
+                        <p><sub>If you want to listen to any of them just click the name of the album.</sub></p>
+                    </details>
+                </caption>
+                <tr>
+                    <th>RELEASE DATE</th>
+                    <th>ARTIST</th>
+                    <th>ALBUM</th>
+                    <th>SONGS</th>
+                </tr>
+                <tr>
+                    <td><time datetime="2014-06-03">June 3, 2014</time></td>
+                    <td>Pentakill</td>
+                    <td><a href="https://open.spotify.com/album/15uKqLeki8fZuLdR44Qtz8?si=Zk10Mf65T5ePiHOK5BtcKQ" target="_blank">Smite and Ignite</a></td>
+                    <td class="szam">8</td>
+                </tr>
+                <tr>
+                    <td><time datetime="2017-08-03">August 3, 2017</time></td>
+                    <td>Pentakill</td>
+                    <td><a href="https://open.spotify.com/album/5U0MXVHm1WiAfmmwFteqUo?si=rdKK8ef4TIyD93V_aKTguA" target="_blank">Grasp of Undying</a></td>
+                    <td class="szam">10</td>
+                </tr>
+                <tr>
+                    <td><time datetime="2018-11-03">November 3, 2018</time></td>
+                    <td>K/DA</td>
+                    <td><a href="https://open.spotify.com/album/0UnBZ8laFgLUq5Ty5vbikQ?si=-FL95bZGQYWips5-lc6TJQ" target="_blank">K/DA</a></td>
+                    <td class="szam">1</td>
+                </tr>
+                <tr>
+                    <td><time datetime="2019-11-10">November 10, 2019</time></td>
+                    <td>True Damage</td>
+                    <td><a href="https://open.spotify.com/album/1hK1lKNTYUM4wYRIY19CRO?si=IQ508bjzSfCz0_UERS4eAA" target="_blank">Giants</a></td>
+                    <td class="szam">1</td>
+                </tr>
+                <tr>
+                    <td><time datetime="2020-11-06">November 6, 2020</time></td>
+                    <td>K/DA</td>
+                    <td><a href="https://open.spotify.com/album/26IdRjba8f8DNa7c0FwfQb?si=kru7K7ErQwitnDd8oFgbqQ" target="_blank">All Out</a></td>
+                    <td class="szam">5</td>
+                </tr>
+                <tr>
+                    <td><time datetime="2021-09-21">September 21, 2021</time></td>
+                    <td>Pentakill</td>
+                    <td><a href="https://open.spotify.com/album/6jHsnYqSmiMqBvzG8qrYuE?si=e98ofuwISXy8dqXBInhRsA" target="_blank">Lost Chapter</a></td>
+                    <td class="szam">11</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+    <button type="button" id="ugrasAtetejere" onclick="location.href='#top'">TO THE TOP</button>
+
+    <footer>
+        <p>Made By: Fábián T. Nikolett - RDDZXA</p>
+    </footer>
+</body>
+</html>

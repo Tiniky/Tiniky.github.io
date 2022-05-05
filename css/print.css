@@ -1,0 +1,18 @@
+@media print{
+body {
+font-family:'Times New Roman', Times, serif;
+margin:3cm;
+}
+
+header, main, footer {
+	width:100%;
+	padding:0;
+}
+
+nav {display:none;}
+button {display:none;}
+
+
+a:after { content: " (" attr(href) ")";}
+
+}
